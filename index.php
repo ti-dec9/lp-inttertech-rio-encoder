@@ -854,7 +854,11 @@
                         <!-- <div class="g-recaptcha" id="g-recaptcha-cta" data-sitekey="6LdX6LgmAAAAADFdW1XUaG_CRfzenPRRsphrmQA4"></div>    
                         <label class="recaptcha-error-form-cta text-center" style="color: red;">Preencha o recaptcha</label>   
                         <br> -->
-                        <button type="submit" class="btn btn-primary d-flex justify-content-end"
+                        <p id="label-captcha"></p>
+                        <input id="valida" type="number" required />
+                        <p id="mensagem" style="color: red;"></p>
+
+                        <button type="submit" class="btn btn-primary d-flex mt-4 justify-content-end"
                             id="btn-form-cta-wpp">Iniciar conversa</button>
                     </form>
                 </div>

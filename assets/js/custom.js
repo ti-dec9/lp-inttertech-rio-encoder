@@ -48,7 +48,22 @@ $(document).ready(function () {
 
 
     /* FORM CTA WPP */
-    $('#form-cta-wpp').validate();
+    $('#form-cta-wpp').validate({       
+        submitHandler: function (form, e) {
+            /* CAPTCHAJS */  
+            var validation = $("#valida").val();
+            //console.log(validation);        
+            if (validation != resposta) {
+                e.preventDefault();
+                $("#mensagem").html('A soma está errada!');
+            } else {
+                $("#mensagem").hide(); 
+                $("#btn-form-cta-wpp").html('enviando, por favor aguarde...');
+                $("#btn-form-cta-wpp").attr("disabled", true);
+                $("#form-cta-wpp").submit();                
+            }
+        }
+    });
 
     /************************
     * VALIDATION FUNCTION
