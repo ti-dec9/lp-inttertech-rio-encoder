@@ -807,7 +807,10 @@
         <i style="margin-top:16px" class="fa fa-whatsapp"></i>
     </a> -->
     <!-- CTA WPP - Button trigger modal -->
-    <a href="#" class="cta-wpp" data-bs-toggle="modal" data-bs-target="#cta-modal">
+    <!-- <a href="#" class="cta-wpp" data-bs-toggle="modal" data-bs-target="#cta-modal">
+        <i class="fa fa-whatsapp"></i>
+    </a> -->
+    <a href="https://wa.me/5521996072513?text=Gostaria%20de%20informações%20sobre%20o%20produto%20Encoder" target="_blank" class="cta-wpp">
         <i class="fa fa-whatsapp"></i>
     </a>
 
